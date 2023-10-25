@@ -40,6 +40,14 @@ btn_evaluate.addEventListener('click', ()=>{
 input.addEventListener("keypress", function (event) {
     event.preventDefault();
 });
+input.addEventListener("keydown", function (event) {
+    event.preventDefault();
+});
+input.addEventListener("keyup", function (event) {
+    event.preventDefault();
+});
+
+
 
 //delete each value when delete button is clicked
 
