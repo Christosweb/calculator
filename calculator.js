@@ -16,9 +16,9 @@ for (let x = 0; x < buttons.length; x++) {
     })
 }
 
-// clear all input values when clear button is clicked
+// delete all input values when btn_del is clicked 
 
-btnClear.addEventListener('click', function(){
+btn_delete.addEventListener('click', function(){
     input.value = ""
 })
 
@@ -41,14 +41,14 @@ input.addEventListener("keypress", function (event) {
     event.preventDefault();
 });
 
-//delete each value when delete button is clicked
+//clear each value when btn_erase button is clicked
 
-btn_delete.addEventListener("click", ()=>{
-    let input_to_delete = input.value;
-    if (input_to_delete.length > 0) {
+btnClear.addEventListener("click", ()=>{
+    let input_to_clear = input.value;
+    if (input_to_clear.length > 0) {
         // Remove the last character
-        input_to_delete = input_to_delete.slice(0, -1);
-        input.value = input_to_delete;
+        input_to_clear = input_to_clear.slice(0, -1);
+        input.value = input_to_clear;
     }
 
 })
